@@ -1,11 +1,16 @@
+import styles from '../styles/components/Profile.module.css';
+
 export function Profile()
 {
     return (
-        <div>
+        <div className={styles.profileContainer}>
             <img src="https://github.com/Alessandro-Miranda.png" alt="Foto de perfil" />
             <div>
                 <strong>Alessandro Miranda</strong>
-                <p>Level 1</p>
+                <p>
+                    <img src="icons/level.svg" alt="level" />
+                    Level 1
+                </p>
             </div>
         </div>
     );
